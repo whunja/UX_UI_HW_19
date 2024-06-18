@@ -1,0 +1,234 @@
+/*HEADER*/
+
+body{
+    margin: 0px;
+}
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#layer1{
+    position:absolute;
+    top: 10px;
+    left: 100px;
+   z-index: 10;
+}
+
+nav{
+    width: 100%;
+    padding: 1% 0% 1% 0%;
+    background-color: #252442;
+    height: 45px;
+    color:#EBECF0;
+}
+ul{
+    display: flex;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: end;
+    font-family: "Josefin Sans";
+    font-size: 18px;
+}
+li{
+    margin-right: 40px;
+}
+
+/*HeroImg*/
+section.heroImg{
+    height: 800px;
+}
+
+.left{
+    float: left;
+    background-color: #D6CDEE;
+    width: 50%;
+    height: 800px;
+}
+
+img.left{
+    height: 350px; 
+    width: auto;
+    border-radius: 50%;
+    margin-top: 200px;
+    display: block;
+    margin-left: 100px;
+    margin-right: auto;
+    box-shadow: -8px 8px 10px #827a99;
+}
+
+.right{
+    width: 50%;
+    height: 800px;
+    margin: 0%;
+    float: right;
+    text-align: start;
+    background-color: #EBECF0;
+    color:#252442;
+}
+h1{
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 200px;
+    margin-left: 60px;
+
+}
+p{
+    font-family: Georgia;
+    font-size: 16px;
+    margin-left: 60px;
+    margin-right: 100px;
+
+}
+
+button.resume{
+    margin: 100px;
+    margin-left: 160px;
+}
+/*Skills*/
+section.mySkills{
+    position: relative;
+    top: -100px;
+    background-color: #CDD6EE;
+    height: 700px;
+}
+.flexContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1% 2%;
+    margin-left: 60px;
+}
+div.box{
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: 10px;
+    flex: 0 0 25%;
+    padding: 25px;
+    margin: .5%;
+    padding-top: 80px;
+    text-align: center;
+    height: 300px;
+}
+
+h1.skills{
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-bottom: 45px;
+}
+
+h2{
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+h4{
+    font-family: Georgia;
+    font-size: 18px;
+    margin:auto;
+    font-weight: 300;
+}
+/*Work*/
+section.myWork{
+    position: relative;
+    top: -100px;
+    background-color: #D6CDEE;
+    height: 1200px;
+}
+h1.work{
+    padding-top: 100px;
+    margin-top: 0px;
+}
+div.workGrid{
+    margin-left: 100px;
+    margin-top: 45px;
+    display: grid;
+    grid-template-rows: 250px 250px 250px;
+    grid-row-gap: 30px;
+    grid-template-columns: 250px 550px;
+    grid-template-areas: 
+        'Flower Jam'
+        'Flower1 Sugar'
+        'Flower2 App';
+}
+.flower{
+    grid-area: Flower;
+}
+.flower1{
+    grid-area: Flower1;
+}
+.flower2{
+    grid-area: Flower2;
+}
+.jam{
+    grid-area: Jam;
+    background-color: #252442;
+}
+.sugar{
+    grid-area: Sugar;
+    background-color: #252442;
+}
+.app{
+    grid-area: App;
+    background-color: #252442;
+
+}
+button{
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    font-family: "Josefin Sans";
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #D6CDEE;
+    color: #252442;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+h3{
+    font-family: 'Josefin Sans';
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 30px; 
+    margin-left: 40px;
+    color: #D6CDEE;
+}
+h5{
+    font-family: Georgia;
+    font-size: 16px;
+    margin:auto;
+    font-weight: 300;
+    margin-left: 40px;
+    color: #D6CDEE;
+}
+
+button.projects{
+    border: 2px solid #252442;
+    margin-top: 50px;
+    padding-top: 5px;
+    margin-left: 100px;
+    width: 800px;
+}
+/*Footer*/
+footer{
+    background-color: #252442;
+    padding: 1% 0% 1% 0%;
+    position: relative;
+    top:-100px;
+    width: 100%;
+    align-content: end;
+    color:#EBECF0;
+    font-family: "Josefin Sans";
+    font-size: 15px;
+}
+
+ul.footer{
+    float: left;
+}
