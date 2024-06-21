@@ -2,66 +2,74 @@
 
 body{
     margin: 0px;
-}
-.inline-block{
-    display: inline-block;
-    vertical-align: top;
+    background-image: linear-gradient(to right, #E6CDEE , #EBECF0);
+
 }
 
 
-#layer1{
-    position:absolute;
-    top: 10px;
-    left: 100px;
-   z-index: 10;
-}
-
-nav{
-    width: 100%;
-    padding: 1% 0% 1% 0%;
+.navbar {
+    overflow: hidden;
     background-color: #252442;
-    height: 45px;
-    color:#EBECF0;
-}
-ul{
-    display: flex;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+  }
+  .navbar img{
+    float: left;
+    padding: 14px;
+    width: 90px;
+    height: 60px;
+    margin-left: 60px;
+  }
+  /* Links inside the navbar */
+  .navbar a {
     float: right;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: end;
-    font-family: "Josefin Sans";
-    font-size: 18px;
-}
-li{
+    display: block;
+    color: #CDD6EE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
     margin-right: 40px;
-}
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline #E6CDEE 3px;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 80px; /* Add a top margin to avoid content overlay */
+  }
 
 /*HeroImg*/
 section.heroImg{
-    height: 800px;
+    height: 550px;
 }
 
 .left{
     float: left;
-    background-color: #D6CDEE;
-    width: 50%;
-    height: 800px;
+    width: 45%;
+    height: 550px;
+    background-image: linear-gradient(to right, #D6CDEE , #EBECF0);
 }
 
 img.left{
-    height: 350px; 
-    width: auto;
+    height: 295px;
+    width: 295px;
     border-radius: 50%;
-    margin-top: 200px;
+    margin-top: 110px;
     display: block;
     margin-left: 100px;
     margin-right: auto;
-    box-shadow: -8px 8px 10px #827a99;
 }
 
 .right{
-    width: 50%;
-    height: 800px;
+    width: 55%;
+    height: 550px;
     margin: 0%;
     float: right;
     text-align: start;
@@ -70,38 +78,82 @@ img.left{
 }
 h1{
     font-family: 'Josefin Sans';
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 48px;
+    font-weight: 500;
     font-style: italic;
-    margin-top: 200px;
-    margin-left: 60px;
+    margin-top: 110px;
+    text-decoration: underline #E6CDEE 6px;
 
 }
 p{
-    font-family: Georgia;
-    font-size: 16px;
-    margin-left: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    margin-left: 0;
     margin-right: 100px;
 
 }
 
 button.resume{
-    margin: 100px;
+    margin: 25px;
     margin-left: 160px;
+    background-color: #252442;
+    color: #E6CDEE;
+    border-radius: 15px;
+    padding: 12px;
+    width: 250px;
 }
+#About{
+    background-image: linear-gradient(to right, #D6CDEE , #EBECF0);}
 /*Skills*/
-section.mySkills{
-    position: relative;
-    top: -100px;
+button.accordion{
+    cursor: pointer;
+    padding: 40px;
+    height: 140px;
+    width: 100%;
+    text-align: left;
+    font-family: 'Josefin Sans';
+    font-size: 48px;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline #252442 5px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 0;
+    border-radius: 0px;
+  }
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    float: right;
+    margin-left: 5px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+#Skills{
     background-color: #CDD6EE;
-    height: 700px;
+}
+section.mySkills{
+    background-color: #CDD6EE;
+    height: 450px;
 }
 .flexContainer{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 1% 2%;
     margin-left: 60px;
+    background-color: #CDD6EE;
+    padding-top: 10px;
+
+}
+div.panel{
+    margin: 0%;
 }
 div.box{
     background: rgba(245, 245, 245, 0.5);
@@ -134,20 +186,27 @@ h4{
     margin:auto;
     font-weight: 300;
 }
+.panel{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 /*Work*/
 section.myWork{
-    position: relative;
-    top: -100px;
-    background-color: #D6CDEE;
-    height: 1200px;
+    height: 1000px;
+    background-image: linear-gradient(to right, #E6CDEE , #EBECF0);
+}
+#Work{
+    background-image: linear-gradient(to right, #E6CDEE , #EBECF0);
 }
 h1.work{
     padding-top: 100px;
     margin-top: 0px;
 }
 div.workGrid{
-    margin-left: 100px;
-    margin-top: 45px;
+    background-image: linear-gradient(to right, #E6CDEE , #EBECF0);
+    padding-left: 200px;
+    padding-top: 50px;
     display: grid;
     grid-template-rows: 250px 250px 250px;
     grid-row-gap: 30px;
@@ -189,7 +248,7 @@ button{
     background-color: #D6CDEE;
     color: #252442;
     margin-top: 30px;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 h3{
     font-family: 'Josefin Sans';
@@ -210,23 +269,23 @@ h5{
 }
 
 button.projects{
-    border: 2px solid #252442;
+    border: 3px solid #252442;
     margin-top: 50px;
     padding-top: 5px;
-    margin-left: 100px;
+    margin-left: 200px;
     width: 800px;
 }
 /*Footer*/
 footer{
     background-color: #252442;
     padding: 1% 0% 1% 0%;
-    position: relative;
-    top:-100px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    align-content: end;
     color:#EBECF0;
-    font-family: "Josefin Sans";
-    font-size: 15px;
+    font-size: 10px;
+    padding-left: 20px;
 }
 
 ul.footer{

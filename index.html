@@ -4,98 +4,106 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <title>About Me</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">        
+<link href="css/style.css" rel="stylesheet" type="text/css">
+        <title>Waringa Hunja</title>
     </head>
     <body>
-<header class="navigation">
-    <div class="logo">
-        <img id="layer1" src="../UX_UI_HW_18/images/Logo-PF.png" height="59" width="88">
-    </div>
-    <nav class="inline-block">
-        <ul>
-            <li class="inline-block">WORK</li>
-            <li class="inline-block">ABOUT</li>
-            <li class="inline-block">RESUME</li>
-        </ul>
-    </nav>
+<header class="navigation" id="myNav">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/Logo-PF.svg" alt="">
+        </div>
+        <a href="#resume">RESUME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#work">WORK</a>
+    
+      </div>
+      
 </header>
-<section class="heroImg" height="872">
-    <div class="left">
-        <img class="left" src="../UX_UI_HW_18/images/WaringaHeadshot.jpg" height="350" width="350">
-    </div>
-    <div class="right">
-        <h1>WHO'S THAT?</h1>
-        <p>Waringa Hunja is a UI designer, content strategist, book designer, and writer from Maryland. She received a BFA from the School of the Art Institute of Chicago, an MFA in Fiction Writing from the University of Wisconsin-Madison, and a Certificate in UX/UI Design through Northwestern University.</p>
-        <button class="resume">DOWNLOAD MY RESUME</button>
-    </div>
-</section>
+<div class="main">
+    <section class="heroImg" height="872">
+        <div class="left">
+            <img class="left" src="images/WaringaHeadshot.jpg" height="295" width="295">
+        </div>
+        <div class="right">
+            <h1>WHO'S THAT?</h1>
+            <p>Waringa Hunja is a UI designer, content strategist, book designer, and writer from Maryland. She received a BFA from the School of the Art Institute of Chicago, an MFA in Fiction Writing from the University of Wisconsin-Madison, and a Certificate in UX/UI Design through Northwestern University.</p>
+            <button class="resume">DOWNLOAD MY RESUME</button>
+        </div>
+    </section>
+</div>
+
 
 <!--My UX Skills section coded using CSS flex-->
-<section class="mySkills">
-    <h1 class="skills">MY UX SKILLS</h1>
-    <div class="flexContainer">
-        <div class="box">
-            <img src="../UX_UI_HW_18/images/FrameResearch.png" height="70" width="70">
-            <h2>USER RESEARCH</h2>
-            <h4>This is how I conduct user research. So many ways!</h4>
+<button class="accordion" id="Skills">MY UX SKILLS</button>
+<div class="panel">
+    <section class="mySkills">
+        <div class="flexContainer">
+            <div class="box">
+                <img src="images/FrameResearch.png" height="70" width="70">
+                <h2>USER RESEARCH</h2>
+                <h4>This is how I conduct user research. So many ways!</h4>
+            </div>
+            <div class="box">
+                <img src="images/FrameDesign.png" height="70" width="70">
+                <h2>USER INTERFACE DESIGN</h2>
+                <h4>This is how I design interfaces. So many ways!</h4>
+            </div>
+            <div class="box">
+                <img src="images/FrameWeb.png" height="70" width="70">
+                <h2>WEB DEVELOPMENT</h2>
+                <h4>This is how I develop webpages. So many ways!</h4>
+            </div>
         </div>
-        <div class="box">
-            <img src="../UX_UI_HW_18/images/FrameDesign.png" height="70" width="70">
-            <h2>USER INTERFACE DESIGN</h2>
-            <h4>This is how I design interfaces. So many ways!</h4>
-        </div>
-        <div class="box">
-            <img src="../UX_UI_HW_18/images/FrameWeb.png" height="70" width="70">
-            <h2>WEB DEVELOPMENT</h2>
-            <h4>This is how I develop webpages. So many ways!</h4>
-        </div>
-    </div>
+    
+    </section>
+</div>
 
-</section>
-
-<section class="myWork">
-    <h1 class="work">MY WORK</h1>
-    <div class="workGrid">
-        <div class="flower">
-            <img src="../UX_UI_HW_18/images/Flower.jpeg" height="250" width="250">
-        </div>
-        <div class="jam">
-            <h3>JAM PACK CASE STUDY</h3>
+<button class="accordion" id="Work">MY WORK</button>
+<div class="panel">
+    <section class="myWork">
+        <div class="workGrid">
+            <div class="flower">
+                <img src="images/Flower.jpeg" height="250" width="250">
+            </div>
+            <div class="jam">
+                <h3>JAM PACK CASE STUDY</h3>
+                <h5>You should check out this excellent case study! Very hireable.</h5>
+                <button>VIEW PROJECT</button>
+            </div>
+    
+            <div class="flower2">
+                <img src="images/Flower.jpeg" height="250" width="250">
+            </div>
+            <div class="sugar">
+                <h3>CUP OF SUGAR CASE STUDY</h3>
+                <h5>You should check out this excellent case study! Very hireable.</h5>
+                <button>VIEW PROJECT</button>
+            </div>
+    
+            <div class="flower3">
+                <img src="images/Flower.jpeg" height="250" width="250">
+            </div>
+            <div class="app">
+            <h3>APP CASE STUDY</h3>
             <h5>You should check out this excellent case study! Very hireable.</h5>
             <button>VIEW PROJECT</button>
+            </div>
         </div>
+        <button class="projects">VIEW ALL PROJECTS</button>
+    </section>
+ 
+</div>
 
-        <div class="flower2">
-            <img src="../UX_UI_HW_18/images/Flower.jpeg" height="250" width="250">
-        </div>
-        <div class="sugar">
-            <h3>CUP OF SUGAR CASE STUDY</h3>
-            <h5>You should check out this excellent case study! Very hireable.</h5>
-            <button>VIEW PROJECT</button>
-        </div>
-
-        <div class="flower3">
-            <img src="../UX_UI_HW_18/images/Flower.jpeg" height="250" width="250">
-        </div>
-        <div class="app">
-        <h3>APP CASE STUDY</h3>
-        <h5>You should check out this excellent case study! Very hireable.</h5>
-        <button>VIEW PROJECT</button>
-        </div>
-    </div>
-    <button class="projects">VIEW ALL PROJECTS</button>
-</section>
 
 <footer>
     <p>Copyright 2024.</p> 
-    <ul class="footer">
-        <li class="inline-block">Work</li>
-        <li class="inline-block">About</li>
-        <li class="inline-block">Resume</li>
-    </ul>
 </footer>
-
+</div>
 
     </body>
+<script src="js/index.js"></script>
 </html>
