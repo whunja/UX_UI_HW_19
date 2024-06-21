@@ -17,9 +17,9 @@ body{
   .navbar img{
     float: left;
     padding: 14px;
-    width: 90px;
-    height: 60px;
-    margin-left: 60px;
+    width: 60px;
+    height: 30px;
+    margin-left: 50px;
   }
   /* Links inside the navbar */
   .navbar a {
@@ -30,9 +30,9 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Josefin Sans';
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 40px;
   }
   
@@ -42,26 +42,26 @@ body{
   
   /* Main content */
   .main {
-    margin-top: 80px; /* Add a top margin to avoid content overlay */
+    margin-top: 60px; /* Add a top margin to avoid content overlay */
   }
 
 /*HeroImg*/
 section.heroImg{
-    height: 550px;
+    height: 350px;
 }
 
 .left{
     float: left;
     width: 45%;
-    height: 550px;
+    height: 350px;
     background-image: linear-gradient(to right, #D6CDEE , #EBECF0);
 }
 
 img.left{
-    height: 295px;
-    width: 295px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    margin-top: 110px;
+    margin-top: 60px;
     display: block;
     margin-left: 100px;
     margin-right: auto;
@@ -69,7 +69,7 @@ img.left{
 
 .right{
     width: 55%;
-    height: 550px;
+    height: 350px;
     margin: 0%;
     float: right;
     text-align: start;
@@ -78,43 +78,44 @@ img.left{
 }
 h1{
     font-family: 'Josefin Sans';
-    font-size: 48px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 400;
     font-style: italic;
-    margin-top: 110px;
+    margin-top: 60px;
     text-decoration: underline #E6CDEE 6px;
 
 }
 p{
     font-family: 'Open Sans', sans-serif;
     font-optical-sizing: auto;
-    font-size: 20px;
+    font-size: 14px;
     margin-left: 0;
-    margin-right: 100px;
+    margin-right: 80px;
 
 }
 
 button.resume{
-    margin: 25px;
-    margin-left: 160px;
+    margin: 20px;
+    margin-left: 30px;
     background-color: #252442;
     color: #E6CDEE;
     border-radius: 15px;
-    padding: 12px;
-    width: 250px;
+    font-size: 10px;
+    padding: 10px;
+    width: 180px;
 }
 #About{
     background-image: linear-gradient(to right, #D6CDEE , #EBECF0);}
 /*Skills*/
 button.accordion{
     cursor: pointer;
-    padding: 40px;
-    height: 140px;
+    padding: 20px;
+    height: 100px;
     width: 100%;
     text-align: left;
     font-family: 'Josefin Sans';
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 400;
     font-style: italic;
     text-decoration: underline #252442 5px;
     border: none;
@@ -128,8 +129,8 @@ button.accordion{
     float: right;
     margin-left: 5px;
     font-style: normal;
-    font-weight: 300;
-    font-size: 32px;
+    font-weight: 200;
+    font-size: 30px;
   }
   
   .active:after {
@@ -141,7 +142,7 @@ button.accordion{
 }
 section.mySkills{
     background-color: #CDD6EE;
-    height: 450px;
+    height: 350px;
 }
 .flexContainer{
     display:flex;
@@ -150,6 +151,7 @@ section.mySkills{
     margin-left: 60px;
     background-color: #CDD6EE;
     padding-top: 10px;
+    margin-right: 30px;
 
 }
 div.panel{
@@ -159,11 +161,11 @@ div.box{
     background: rgba(245, 245, 245, 0.5);
     border-radius: 10px;
     flex: 0 0 25%;
-    padding: 25px;
+    padding: 20px;
     margin: .5%;
-    padding-top: 80px;
+    padding-top: 20px;
     text-align: center;
-    height: 300px;
+    height: 230px;
 }
 
 h1.skills{
@@ -172,19 +174,21 @@ h1.skills{
     margin-bottom: 45px;
 }
 
+
 h2{
     font-family: 'Josefin Sans';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-top: 20px;
     padding-top: 10px;
     margin-bottom: 40px;
 }
 h4{
-    font-family: Georgia;
-    font-size: 18px;
+    font-family: "Open Sans";
+    font-size: 14px;
     margin:auto;
-    font-weight: 300;
+    font-weight: 400;
+    padding-bottom: 30px;
 }
 .panel{
     max-height: 0;
@@ -193,24 +197,24 @@ h4{
 }
 /*Work*/
 section.myWork{
-    height: 1000px;
+    height: 800px;
     background-image: linear-gradient(to right, #E6CDEE , #EBECF0);
 }
 #Work{
     background-image: linear-gradient(to right, #E6CDEE , #EBECF0);
 }
 h1.work{
-    padding-top: 100px;
+    padding-top: 80px;
     margin-top: 0px;
 }
 div.workGrid{
     background-image: linear-gradient(to right, #E6CDEE , #EBECF0);
-    padding-left: 200px;
-    padding-top: 50px;
+    padding-left: 90px;
+    padding-top: 10px;
     display: grid;
-    grid-template-rows: 250px 250px 250px;
+    grid-template-rows: 150px 150px 150px;
     grid-row-gap: 30px;
-    grid-template-columns: 250px 550px;
+    grid-template-columns: 150px 500px;
     grid-template-areas: 
         'Flower Jam'
         'Flower1 Sugar'
@@ -239,29 +243,30 @@ div.workGrid{
 
 }
 button{
-    width: 200px;
-    height: 40px;
+    width: 160px;
+    height: 30px;
     border-radius: 4px;
     font-family: "Josefin Sans";
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 400;
     background-color: #D6CDEE;
     color: #252442;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 40px;
+    padding: 6px;
 }
 h3{
     font-family: 'Josefin Sans';
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
-    margin-top: 50px;
-    margin-bottom: 30px; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
     margin-left: 40px;
     color: #D6CDEE;
 }
 h5{
-    font-family: Georgia;
-    font-size: 16px;
+    font-family: "Open Sans";
+    font-size: 14px;
     margin:auto;
     font-weight: 300;
     margin-left: 40px;
@@ -269,18 +274,17 @@ h5{
 }
 
 button.projects{
-    border: 3px solid #252442;
+    border: 2px solid #252442;
     margin-top: 50px;
     padding-top: 5px;
-    margin-left: 200px;
-    width: 800px;
+    margin-left: 90px;
+    width: 650px;
 }
 /*Footer*/
 footer{
     background-color: #252442;
     padding: 1% 0% 1% 0%;
     overflow: hidden;
-    position: fixed;
     bottom: 0;
     width: 100%;
     color:#EBECF0;
